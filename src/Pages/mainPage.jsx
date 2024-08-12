@@ -211,11 +211,7 @@ const MainPage = () => {
                     </div>
                 </div>
                 <div className="bg-secondary-blue sm:w-[40%] xl:w-[25%] 4xl:w-[30%] 5xl:w-[25%] h-[100vh] hidden sm:inline-flex flex-col justify-center">
-                    {/* <img
-                    src={ContactUsImage}
-                    alt=""
-                    className="absolute left-[52%] md:left-[55%] xl:left-[60%] 4xl:left-[60%] 5xl:left-[65%] sm:max-w-[350px] md:max-w-[300px] lg:min-w-[400px] 4xl:min-w-[450px] 6xl:min-w-[800px] max-h-[700px] 6xl:max-h-none h-5/6"
-                /> */}
+                  
                     <ImageSlider
                         images={images}
                         className={"absolute left-[52%] xs:left-[52%] md:left-[55%] xl:left-[60%] 4xl:left-[60%] 5xl:left-[65%] sm:max-w-[300px] md:max-w-[300px] lg:min-w-[400px] 4xl:min-w-[450px] 6xl:min-w-[800px] max-h-[700px] 6xl:max-h-none "} />
