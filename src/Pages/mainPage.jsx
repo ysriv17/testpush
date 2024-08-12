@@ -1,7 +1,7 @@
-import Button from "../components/Button/Button";
+import Button from "../components/Button/Button.jsx";
 import "react-international-phone/style.css";
-import image1 from "../Assets/Display/mainPage.jpeg"
-import image2 from "../Assets/Display/mainPage2.jpeg"
+import image1 from "../Assets/images/mainPage.jpeg"
+import image2 from "../Assets/images/mainPage2.jpeg"
 import Dropdown from "../components/Dropdown/Dropdown";
 import { useState } from "react";
 import axios from "axios";
@@ -44,7 +44,7 @@ const MainPage = () => {
 
     return (
         <>
-         
+
             <div className="w-full h-full flex items-center relative ">
 
                 <div className="bg-white sm:bg-white w-full sm:w-[60%] xl:w-[80%] h-full ">
@@ -58,7 +58,7 @@ const MainPage = () => {
                                     { id: "RealEState", title: "Real EState" },
                                     { id: "University", title: "University" },
                                 ]}
-                                tooltip= {true}
+                                tooltip={true}
                                 handleSelectValue={(source) => setSourceValue(source)}
                                 selectedValue={sourceValue}
                                 extraClass={`text-base sm:text-sm px-3 py-2 6xl:p-5 text-gray-400
@@ -104,7 +104,7 @@ const MainPage = () => {
                                     <form onSubmit={formik.handleSubmit}>
                                         <div className="flex flex-col space-y-5 6xl:space-y-10 my-3">
                                             <InputField
-                                            
+
                                                 type="text"
                                                 name="Name"
                                                 id="Name"
@@ -136,7 +136,7 @@ const MainPage = () => {
                                                 error={formik.touched.email && formik.errors.email}
                                                 {...formik.getFieldProps("email")}
                                                 tooltip={true}
-                                                tooltipmessage={"Enter A Vaild Email Here" }
+                                                tooltipmessage={"Enter A Vaild Email Here"}
                                                 lable={true}
                                                 lablecontent={"Email"}
                                                 lableclass={"font-semibold"}
@@ -150,7 +150,7 @@ const MainPage = () => {
                                                 tooltip={true}
                                                 tooltipmessage={"Enter Your Phone NUmber Here"}
                                                 inputClassName={"w-full"}
-                                                style={{width :"100%"}}
+                                                style={{ width: "100%" }}
                                                 lable={true}
                                                 lableclass={"font-semibold"}
 
