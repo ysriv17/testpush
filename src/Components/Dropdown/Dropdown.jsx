@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ChevronDownIcon from "../../Asserts//svg/chevron-down";
+import ChevronDownIcon from "../../Assets/svg/chevron-down";
 import DropdownMenu from "./components/DropdownMenu";
 import DropdownMenuWithCheckbox from "./components/DropdownMenuWithCheckbox";
 import { useEventChangeOutside } from "../../Hooks/use-event-change-outside";

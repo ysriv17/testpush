@@ -1,11 +1,9 @@
 import Button from "../components/Button/Button";
 import "react-international-phone/style.css";
-import image1 from "../Asserts/Display/mainPage.jpeg"
-import image2 from "../Asserts/Display/mainPage2.jpeg"
+import image1 from "../Assets/Display/mainPage.jpeg"
+import image2 from "../Assets/Display/mainPage2.jpeg"
 import Dropdown from "../components/Dropdown/Dropdown";
-
 import { useState } from "react";
-
 import axios from "axios";
 import { Formik } from "formik";
 import * as Yup from "yup";
@@ -13,7 +11,6 @@ import toast from "react-hot-toast";
 import InputField from "../Components/Input/Input";
 import { PhoneInput } from "react-international-phone";
 import ImageSlider from "../Components/ImageSlider/Imageslider";
-import Navbar from "../Components/Navbar/navbar";
 import PhoneNumber from "../Components/phoneNumber/PhoneNumber";
 const MainPage = () => {
     const [sourceValue, setSourceValue] = useState("");
@@ -47,7 +44,7 @@ const MainPage = () => {
 
     return (
         <>
-            <Navbar />
+         
             <div className="w-full h-full flex items-center relative ">
 
                 <div className="bg-white sm:bg-white w-full sm:w-[60%] xl:w-[80%] h-full ">
