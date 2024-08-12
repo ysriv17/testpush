@@ -17,7 +17,7 @@ const PhoneNumber = ({
 
   return (
     <div className='w-full'>
-      <label id={lableid} className="text-lg text-pretty px-1">Phone Number</label>
+      <label id={lableid} className="text-lg text-pretty px-1 font-semibold">PHONE NUMBER</label>
       <div className='w-full flex gap-3 items-center'>
         <PhoneInput
           name={`${name}`}

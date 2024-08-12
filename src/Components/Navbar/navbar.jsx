@@ -51,7 +51,7 @@ function ResponsiveAppBar() {
                                 textDecoration: 'none',
                             }}
                         >
-                            VERBAFLOW
+                            VERBAFLO.AI
                         </Typography>
 
 

@@ -17,11 +17,14 @@ const InputField = ({
   tooltipmessage,
   lable = false , 
   lableclass,
+  lablecontent,
   ...rest
 }) => {
   return (
     <div className="w-full">
-      <label id={name} className={`px-1 uppercase text-lg text-pretty${lableclass}`}>{name}</label>
+
+      <label id={name} className={`px-1 uppercase text-lg text-pretty ${lableclass}`}>{lablecontent}</label>
+
         <div className="flex items-center gap-3 ">
           <div className={`flex items-center w-full ${extraClass}`}>
             <input

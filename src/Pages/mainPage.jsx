@@ -13,7 +13,7 @@ import toast from "react-hot-toast";
 import InputField from "../Components/Input/Input";
 import { PhoneInput } from "react-international-phone";
 import ImageSlider from "../Components/ImageSlider/Imageslider";
-import Navbar from "../Components/Navbar/navbar"
+import Navbar from "../Components/Navbar/navbar";
 import PhoneNumber from "../Components/phoneNumber/PhoneNumber";
 const MainPage = () => {
     const [sourceValue, setSourceValue] = useState("");
@@ -58,7 +58,7 @@ const MainPage = () => {
                             <Dropdown
                                 title="How did you find us?"
                                 menuItems={[
-                                    { id: "RealState", title: "Real State" },
+                                    { id: "RealEState", title: "Real EState" },
                                     { id: "University", title: "University" },
                                 ]}
                                 tooltip= {true}
@@ -71,7 +71,7 @@ const MainPage = () => {
                             />
                         </div>
                         <h1 className="text-[30px] sm:text-[36px] lg:text-[42px] xl:text-[50px] 6xl:text-[85px] font-bold text-black">
-                            REAL <span className="text-ternary-blue"> STATE</span>
+                            REAL <span className="text-ternary-blue"> ESTATE</span>
                         </h1>
                         <p className="my-3 6xl:mb-7 text-sm 6xl:text-4xl 6xl:leading-[3.5rem] text-black font-medium">
                             Stop thinking and start comparing
@@ -107,6 +107,7 @@ const MainPage = () => {
                                     <form onSubmit={formik.handleSubmit}>
                                         <div className="flex flex-col space-y-5 6xl:space-y-10 my-3">
                                             <InputField
+                                            
                                                 type="text"
                                                 name="Name"
                                                 id="Name"
@@ -120,6 +121,9 @@ const MainPage = () => {
                                                 {...formik.getFieldProps("Name")}
                                                 tooltip={true}
                                                 tooltipmessage={"Enter Your Name Here"}
+                                                lable={true}
+                                                lablecontent={"NAME"}
+                                                lableclass={"font-semibold"}
                                             />
 
                                             <InputField
@@ -136,6 +140,9 @@ const MainPage = () => {
                                                 {...formik.getFieldProps("email")}
                                                 tooltip={true}
                                                 tooltipmessage={"Enter A Vaild Email Here" }
+                                                lable={true}
+                                                lablecontent={"Email"}
+                                                lableclass={"font-semibold"}
                                             />
                                             <PhoneNumber
                                                 name="Phone Number"
@@ -147,6 +154,8 @@ const MainPage = () => {
                                                 tooltipmessage={"Enter Your Phone NUmber Here"}
                                                 inputClassName={"w-full"}
                                                 style={{width :"100%"}}
+                                                lable={true}
+                                                lableclass={"font-semibold"}
 
                                             />
                                             <InputField
@@ -163,6 +172,9 @@ const MainPage = () => {
                                                 {...formik.getFieldProps("Nationality")}
                                                 tooltip={true}
                                                 tooltipmessage={"Enter Your Nationality Here."}
+                                                lable={true}
+                                                lablecontent={"Nationality"}
+                                                lableclass={"font-semibold"}
                                             />
                                             <InputField
                                                 type="text"
@@ -178,6 +190,9 @@ const MainPage = () => {
                                                 {...formik.getFieldProps("University")}
                                                 tooltip={true}
                                                 tooltipmessage={"Enter A Vaild University"}
+                                                lable={true}
+                                                lablecontent={"University"}
+                                                lableclass={"font-semibold"}
                                             />
 
                                             <div className="w-full">
