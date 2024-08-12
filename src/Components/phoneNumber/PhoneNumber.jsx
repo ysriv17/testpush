@@ -1,6 +1,6 @@
 import React from 'react'
 import { PhoneInput } from "react-international-phone";
-import TooltipContent from '../Input/Tooltip';
+import TooltipContent from '../Tooltip/Tooltip';
 const PhoneNumber = ({
   name,
   defaultCountry,

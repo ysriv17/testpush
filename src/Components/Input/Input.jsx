@@ -1,5 +1,5 @@
 
-import TooltipContent  from "./Tooltip";
+import TooltipContent  from "../Tooltip/Tooltip";
 
 const InputField = ({
   placeholder,

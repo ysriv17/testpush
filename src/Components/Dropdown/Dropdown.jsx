@@ -1,9 +1,8 @@
 import { useState } from "react";
 import ChevronDownIcon from "../../Assets/svg/chevron-down";
 import DropdownMenu from "./components/DropdownMenu";
-import DropdownMenuWithCheckbox from "./components/DropdownMenuWithCheckbox";
 import { useEventChangeOutside } from "../../Hooks/use-event-change-outside";
-import TooltipContent from "../Input/Tooltip";
+import TooltipContent from "../Tooltip/Tooltip";
 
 
 const Dropdown = ({
@@ -74,17 +73,7 @@ const Dropdown = ({
           />
         )}
 
-        {menuItemsWithCheckbox && menuItems && menuItems.length > 0 && open && (
-          <DropdownMenuWithCheckbox
-            menuItems={menuItems}
-            dropdownMenuExtraClass={dropdownMenuExtraClass}
-            handleSelectValue={handleSelectValue}
-            setOpen={setOpen}
-            selectedCheckboxValue={selectedCheckboxValue}
-            selectedValue={selectedValue}
-            handleCheckboxChange={handleCheckboxChange}
-          />
-        )}
+       
       </div>
        <TooltipContent />
     </div>
